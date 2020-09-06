@@ -16,9 +16,9 @@ class BSTIterator(object):
         else:
             return -1
 
-    def peek(self):
-        if self.has_next():
-            return self.s[-1].val
+    # def peek(self):
+    #     if self.has_next():
+    #         return self.s[-1].val
 
     def push_all_left(self, root):
         while root:
