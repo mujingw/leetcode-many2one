@@ -1,6 +1,6 @@
 # 284. Peeking Iterator
 
-class BSTPeekingIterator(object):
+class PeekingIterator(object):
     def __init__(self, bst_iterator):
         self.iter = bst_iterator
         self.peeked = False

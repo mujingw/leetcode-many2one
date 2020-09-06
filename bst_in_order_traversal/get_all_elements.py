@@ -1,28 +1,12 @@
 # 1305. All Elements in Two Binary Search Trees
 
 from BSTIterator import BSTIterator
-from BSTPeekingIterator import BSTPeekingIterator
-from struct.TreeNode import TreeNode
+from util.merge_using_iterator import merge_using_iterator
+from node.TreeNode import TreeNode
 
 
 def get_all_elements(root1, root2):
-    iter1 = BSTPeekingIterator(BSTIterator(root1))
-    iter2 = BSTPeekingIterator(BSTIterator(root2))
-    res = []
-
-    while iter1.has_next() and iter2.has_next():
-        if iter1.peek() < iter2.peek():
-            res.append(iter1.next_val())
-        else:
-            res.append(iter2.next_val())
-
-    while iter1.has_next():
-        res.append(iter1.next_val())
-
-    while iter2.has_next():
-        res.append(iter2.next_val())
-
-    return res
+    return merge_using_iterator(BSTIterator(root1), BSTIterator(root2))
 
 
 test_root1 = TreeNode(2)
