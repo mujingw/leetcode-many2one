@@ -10,3 +10,9 @@
 - 173, 284
 ## Two Pointers
 - 21, 1305
+### Sliding Window
+##### Fixed Size Window
+- 438, 1176 
+##### Variable Size Window
+- 3, 159, 340, 904
+
