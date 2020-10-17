@@ -1,8 +1,8 @@
 # 284. Peeking Iterator
 
 class PeekingIterator(object):
-    def __init__(self, bst_iterator):
-        self.iter = bst_iterator
+    def __init__(self, primitive_iterator):
+        self.iter = primitive_iterator
         self.peeked = False
         self.peeked_val = None
 
