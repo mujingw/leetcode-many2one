@@ -4,7 +4,7 @@ from single_number import single_number
 
 
 def find_difference(s, t):
-    return chr(single_number(map(lambda x: ord(x), s + t)))
+    return chr(single_number([ord(ch) for ch in s + t]))
 
 
 assert ("e" == find_difference("abcd", "abcde"))
