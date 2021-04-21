@@ -1,6 +1,6 @@
 # 148. Sort List
 
-from util.ListUtil import find_mid
+from util.ListUtil import find_mid_split
 from util.ListUtil import merge_sorted
 from node.ListNode import ListNode
 from list_traversal.get_all_list_elements import get_all_list_elements_sorted
@@ -22,7 +22,7 @@ def sort_list(head):
         else:
             return first
 
-    mid = find_mid(head)
+    mid = find_mid_split(head)
     l1 = sort_list(head)
     l2 = sort_list(mid)
 

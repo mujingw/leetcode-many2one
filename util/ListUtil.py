@@ -13,7 +13,7 @@ def get_length(head):
     return count
 
 
-def find_mid(head):
+def find_mid_split(head):
     if not head or not head.next_node:
         return head
 
@@ -62,8 +62,8 @@ assert(0 == get_length(None))
 assert(1 == get_length(ListNode(1)))
 assert(3 == get_length(ListNode(1, ListNode(2, ListNode(3)))))
 
-assert(3 == find_mid(ListNode(0, ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5))))))).val)
-assert(2 == find_mid(ListNode(0, ListNode(1, ListNode(2, ListNode(3, ListNode(4)))))).val)
+assert(3 == find_mid_split(ListNode(0, ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5))))))).val)
+assert(2 == find_mid_split(ListNode(0, ListNode(1, ListNode(2, ListNode(3, ListNode(4)))))).val)
 
 test_l1 = ListNode(1, ListNode(3, ListNode(4)))
 test_l2 = ListNode(2, ListNode(5))
